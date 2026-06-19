@@ -6,6 +6,6 @@ with sync_playwright() as playwright:
     page = context.new_page()
     page.goto("https://www.google.com/")
     print(page.title())
-    print("Google successfully launched!!")
+    print("Google successfully launched!")
     page.wait_for_timeout(3000)
     browser.close()
